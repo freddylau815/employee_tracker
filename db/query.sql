@@ -19,3 +19,8 @@ SELECT
             ON employees.manager_id = manager.id;
 
         
+-- Get EMPLOYEES by DEPARTMENT
+ SELECT
+        employees.first_name,
+        employees.last_name,
+        roles.title,
