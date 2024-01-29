@@ -6,4 +6,4 @@ const connection = mysql.createConnection({
     database: 'company_db'
   })
   
-  module.exports = connection.promise();
+  module.exports = connection;
