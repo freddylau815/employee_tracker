@@ -1,7 +1,7 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
-const db = require('./db/connection')
-// const questions = require('')
+const {viewAllEmployees} = require('./lib/functions')
+// const db = require('./db/connection')
 
 const question =[
     {
@@ -14,16 +14,17 @@ const question =[
 
 function init() {
     inquirer.prompt(question).then((answerObj) => {
-        console.log(answerObj.tasks)
+        console.log(answerObj.task)
         switch (answerObj.task) {
             case 'View all departments': 
-                vieAllDep();
+                // vieAllDep();
+                console.log('ALL DEPS')
                 break;
             case 'View all roles': 
-                vieAllRoles();
+                viewllRoles();
                 break;
             case 'View all employees': 
-                vieAllEmployees();
+                viewAllEmployees();
                 break;
             case 'Add a department': 
                 addDep();
