@@ -36,11 +36,14 @@ USE company_db;
 -- Get ALL Roles
 -- job title, role id, the department that role belongs to, and the salary for that role
 
-SELECT 
-        roles.id,
-        roles.title,
-        roles.salary,
-        departments.dep_name
-        FROM roles
-        JOIN departments
-            ON roles.department_id = departments.id;
+-- SELECT 
+--         roles.id,
+--         roles.title,
+--         roles.salary,
+--         departments.dep_name
+--         FROM roles
+--         JOIN departments
+--             ON roles.department_id = departments.id;
+
+
+INSERT INTO departments (dep_name) VALUES
